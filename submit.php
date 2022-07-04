@@ -8,8 +8,12 @@
 </head>
 <body>
     <?php
-     $name=$_REQUEST["name"];
-     echo "Hey " .$name.", nice to meet you . I am PHP";
+     for($i=1;$i<=10;$i++){
+        //  echo $i * $_POST["num"];
+    //    echo $_post["num"] * . $i. "=" $_POST["num"];
+    echo $_POST["num"]."*" .$i. "=" .$_POST["num"];
+       echo "<br/>";
+     }
     ?>
 </body> 
 </html>

@@ -8,10 +8,9 @@
 </head>
 <body>
     <form action="submit.php" method="post">
-        <label for="inputName">Enter your name:</label>
-        <input type="text" name="name" id="inputName">
+        <label for="inputNumber">Enter a number:</label>
+        <input type="number" name="num" id="inputNumber">
          <input type="submit" value="submit">
-
     </form>
 </body>
 </html>     
