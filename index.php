@@ -7,11 +7,11 @@
     <title>Document of Get Method</title>
 </head>
 <body>
-    <form action="submit.php" method="get">
+    <form action="submit.php" method="post">
         <label for="inputName">Enter your name:</label>
         <input type="text" name="name" id="inputName">
          <input type="submit" value="submit">
 
     </form>
 </body>
-</html>
+</html>     
