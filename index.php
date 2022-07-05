@@ -4,19 +4,12 @@ session_start();
 ?>
 <html>
 <body>
+<?php
+$_SESSION["firstname"]="ruchika";
+$_SESSION["lastname"]="Sharma";
+echo "The session variable are set up";
 
 
-<script>
-// Check if the sessionStorage object exists
-if(sessionStorage) {
-    // Store data
-    sessionStorage.setItem("last_name", "Parker");
-    
-    // Retrieve data
-    alert("Hi, " + localStorage.getItem("first_name") + " " + sessionStorage.getItem("last_name"));
-} else {
-    alert("Sorry, your browser do not support session storage.");
-}
-</script>
+?>
 </body>
 </html>
