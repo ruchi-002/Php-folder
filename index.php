@@ -1,20 +1,22 @@
 <?php
-$cookie_name = "user";
-$cookie_value = "Ruchika Sharma";
-setcookie($cookie_name, $cookie_value, time()+4, "/"); // 86400 = 1 day
+// Starting session
+session_start();
 ?>
 <html>
 <body>
 
-<?php
-if(isset($_COOKIE[$cookie_name])) {
-    echo "Cookie " . $cookie_name . " is set!<br>";
-    echo "Value is: " . $_COOKIE[$cookie_name];
-  
-} else {
-  echo "Cookie named " . $cookie_name . " is not set!";
-}
-?>
 
+<script>
+// Check if the sessionStorage object exists
+if(sessionStorage) {
+    // Store data
+    sessionStorage.setItem("last_name", "Parker");
+    
+    // Retrieve data
+    alert("Hi, " + localStorage.getItem("first_name") + " " + sessionStorage.getItem("last_name"));
+} else {
+    alert("Sorry, your browser do not support session storage.");
+}
+</script>
 </body>
 </html>
